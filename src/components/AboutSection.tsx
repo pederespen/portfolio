@@ -1,20 +1,20 @@
 const AboutSection = () => {
   return (
-    <section id="about" className="py-20 px-4 bg-gray-50 dark:bg-gray-900">
+    <section id="about" className="min-h-screen px-4 pt-20 pb-16">
       <div className="container mx-auto">
-        <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
+        <h2 className="text-3xl md:text-4xl font-bold mb-12 text-left">
           About Me
         </h2>
 
-        <div className="grid md:grid-cols-2 gap-12 items-center">
+        <div className="grid md:grid-cols-2 gap-12 items-start">
           <div>
             <h3 className="text-2xl font-bold mb-4">My Background</h3>
-            <p className="text-gray-600 dark:text-gray-300 mb-4">
+            <p className="text-gray-700 mb-4">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in
               dui mauris. Vivamus hendrerit arcu sed erat molestie vehicula. Sed
               auctor neque eu tellus rhoncus ut eleifend nibh porttitor.
             </p>
-            <p className="text-gray-600 dark:text-gray-300 mb-4">
+            <p className="text-gray-700 mb-4">
               Ut in nulla enim. Phasellus molestie magna non est bibendum non
               venenatis nisl tempor. Suspendisse dictum feugiat nisl ut dapibus.
               Mauris iaculis porttitor.
@@ -39,7 +39,7 @@ const AboutSection = () => {
                 ].map((skill) => (
                   <span
                     key={skill}
-                    className="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-100 rounded-full text-sm"
+                    className="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm"
                   >
                     {skill}
                   </span>
@@ -53,15 +53,11 @@ const AboutSection = () => {
                 <div className="font-semibold">
                   Bachelor of Computer Science
                 </div>
-                <div className="text-gray-600 dark:text-gray-400">
-                  University Name, 2018-2022
-                </div>
+                <div className="text-gray-600">University Name, 2018-2022</div>
               </div>
               <div>
                 <div className="font-semibold">Web Development Bootcamp</div>
-                <div className="text-gray-600 dark:text-gray-400">
-                  Coding Academy, 2022
-                </div>
+                <div className="text-gray-600">Coding Academy, 2022</div>
               </div>
             </div>
           </div>

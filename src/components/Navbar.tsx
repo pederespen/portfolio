@@ -1,12 +1,42 @@
-import React from "react";
+"use client";
+
+import React, { useState, useEffect } from "react";
 import Link from "next/link";
 
 const Navbar = () => {
+  const [visible, setVisible] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      // Check if we've scrolled past the hero section (100vh)
+      const scrollPosition = window.scrollY;
+      const viewportHeight = window.innerHeight;
+
+      if (scrollPosition > viewportHeight * 0.8) {
+        setVisible(true);
+      } else {
+        setVisible(false);
+      }
+    };
+
+    // Add scroll event listener
+    window.addEventListener("scroll", handleScroll);
+
+    // Initial check
+    handleScroll();
+
+    // Cleanup
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
-    <nav className="fixed top-0 w-full bg-white/80 dark:bg-black/80 backdrop-blur-sm z-10 py-4">
-      <div className="container mx-auto flex justify-between items-center px-4">
-        <div className="text-xl font-bold">Your Name</div>
-        <ul className="flex space-x-6">
+    <nav
+      className={`fixed top-0 w-full bg-white/95 backdrop-blur-sm z-10 py-4 shadow-sm transition-all duration-300 ${
+        visible ? "translate-y-0 opacity-100" : "-translate-y-full opacity-0"
+      }`}
+    >
+      <div className="container mx-auto flex justify-start items-center px-4">
+        <ul className="flex space-x-10">
           <li>
             <Link
               href="#hero"

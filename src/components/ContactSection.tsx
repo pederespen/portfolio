@@ -1,25 +1,25 @@
 const ContactSection = () => {
   return (
-    <section id="contact" className="py-20 px-4 bg-gray-50 dark:bg-gray-900">
+    <section id="contact" className="min-h-screen px-4 pt-20 pb-16">
       <div className="container mx-auto max-w-4xl">
-        <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
+        <h2 className="text-3xl md:text-4xl font-bold mb-12 text-left">
           Get In Touch
         </h2>
 
         <div className="grid md:grid-cols-2 gap-12">
           <div>
             <h3 className="text-2xl font-bold mb-4">Contact Info</h3>
-            <p className="text-gray-600 dark:text-gray-300 mb-6">
+            <p className="text-gray-700 mb-6">
               Feel free to reach out if you&apos;re looking for a developer,
               have a question, or just want to connect.
             </p>
 
             <div className="space-y-4">
               <div className="flex items-center">
-                <div className="w-10 h-10 rounded-full bg-blue-100 dark:bg-blue-900 flex items-center justify-center mr-3">
+                <div className="w-10 h-10 rounded-full bg-blue-100 flex items-center justify-center mr-3">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    className="h-5 w-5 text-blue-600 dark:text-blue-300"
+                    className="h-5 w-5 text-blue-600"
                     viewBox="0 0 20 20"
                     fill="currentColor"
                   >
@@ -28,9 +28,7 @@ const ContactSection = () => {
                   </svg>
                 </div>
                 <div>
-                  <div className="text-sm text-gray-600 dark:text-gray-400">
-                    Email
-                  </div>
+                  <div className="text-sm text-gray-600">Email</div>
                   <a
                     href="mailto:your.email@example.com"
                     className="hover:text-blue-500"
@@ -41,10 +39,10 @@ const ContactSection = () => {
               </div>
 
               <div className="flex items-center">
-                <div className="w-10 h-10 rounded-full bg-blue-100 dark:bg-blue-900 flex items-center justify-center mr-3">
+                <div className="w-10 h-10 rounded-full bg-blue-100 flex items-center justify-center mr-3">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    className="h-5 w-5 text-blue-600 dark:text-blue-300"
+                    className="h-5 w-5 text-blue-600"
                     viewBox="0 0 20 20"
                     fill="currentColor"
                   >
@@ -52,9 +50,7 @@ const ContactSection = () => {
                   </svg>
                 </div>
                 <div>
-                  <div className="text-sm text-gray-600 dark:text-gray-400">
-                    Phone
-                  </div>
+                  <div className="text-sm text-gray-600">Phone</div>
                   <a href="tel:+1234567890" className="hover:text-blue-500">
                     +1 (234) 567-890
                   </a>
@@ -62,10 +58,10 @@ const ContactSection = () => {
               </div>
 
               <div className="flex items-center">
-                <div className="w-10 h-10 rounded-full bg-blue-100 dark:bg-blue-900 flex items-center justify-center mr-3">
+                <div className="w-10 h-10 rounded-full bg-blue-100 flex items-center justify-center mr-3">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    className="h-5 w-5 text-blue-600 dark:text-blue-300"
+                    className="h-5 w-5 text-blue-600"
                     viewBox="0 0 20 20"
                     fill="currentColor"
                   >
@@ -82,9 +78,7 @@ const ContactSection = () => {
                   </svg>
                 </div>
                 <div>
-                  <div className="text-sm text-gray-600 dark:text-gray-400">
-                    Location
-                  </div>
+                  <div className="text-sm text-gray-600">Location</div>
                   <div>San Francisco, CA</div>
                 </div>
               </div>
@@ -151,14 +145,14 @@ const ContactSection = () => {
               <div>
                 <label
                   htmlFor="name"
-                  className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1"
+                  className="block text-sm font-medium text-gray-700 mb-1"
                 >
                   Name
                 </label>
                 <input
                   type="text"
                   id="name"
-                  className="w-full px-4 py-2 border border-gray-300 dark:border-gray-700 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 dark:bg-gray-800"
+                  className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
                   placeholder="Your Name"
                   required
                 />
@@ -167,14 +161,14 @@ const ContactSection = () => {
               <div>
                 <label
                   htmlFor="email"
-                  className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1"
+                  className="block text-sm font-medium text-gray-700 mb-1"
                 >
                   Email
                 </label>
                 <input
                   type="email"
                   id="email"
-                  className="w-full px-4 py-2 border border-gray-300 dark:border-gray-700 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 dark:bg-gray-800"
+                  className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
                   placeholder="your.email@example.com"
                   required
                 />
@@ -183,14 +177,14 @@ const ContactSection = () => {
               <div>
                 <label
                   htmlFor="subject"
-                  className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1"
+                  className="block text-sm font-medium text-gray-700 mb-1"
                 >
                   Subject
                 </label>
                 <input
                   type="text"
                   id="subject"
-                  className="w-full px-4 py-2 border border-gray-300 dark:border-gray-700 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 dark:bg-gray-800"
+                  className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
                   placeholder="How can I help you?"
                   required
                 />
@@ -199,14 +193,14 @@ const ContactSection = () => {
               <div>
                 <label
                   htmlFor="message"
-                  className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1"
+                  className="block text-sm font-medium text-gray-700 mb-1"
                 >
                   Message
                 </label>
                 <textarea
                   id="message"
                   rows={4}
-                  className="w-full px-4 py-2 border border-gray-300 dark:border-gray-700 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 dark:bg-gray-800"
+                  className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
                   placeholder="Your message here..."
                   required
                 />

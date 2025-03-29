@@ -33,9 +33,9 @@ const ProjectsSection = () => {
   ];
 
   return (
-    <section id="projects" className="py-20 px-4">
+    <section id="projects" className="min-h-screen px-4 pt-20 pb-16">
       <div className="container mx-auto">
-        <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
+        <h2 className="text-3xl md:text-4xl font-bold mb-12 text-left">
           My Projects
         </h2>
 
@@ -43,26 +43,24 @@ const ProjectsSection = () => {
           {projects.map((project) => (
             <div
               key={project.id}
-              className="bg-white dark:bg-gray-800 rounded-lg overflow-hidden shadow-lg transition-transform hover:scale-105"
+              className="bg-white rounded-lg overflow-hidden shadow-lg transition-transform hover:scale-105 border border-gray-200"
             >
-              <div className="relative h-48 w-full bg-gray-200 dark:bg-gray-700">
+              <div className="relative h-48 w-full bg-gray-200">
                 {/* Replace with actual images when available */}
-                <div className="absolute inset-0 flex items-center justify-center text-gray-500 dark:text-gray-400">
+                <div className="absolute inset-0 flex items-center justify-center text-gray-500">
                   Project Image
                 </div>
               </div>
 
               <div className="p-6">
                 <h3 className="text-xl font-bold mb-2">{project.title}</h3>
-                <p className="text-gray-600 dark:text-gray-300 mb-4">
-                  {project.description}
-                </p>
+                <p className="text-gray-700 mb-4">{project.description}</p>
 
                 <div className="flex flex-wrap gap-2 mb-4">
                   {project.tags.map((tag) => (
                     <span
                       key={tag}
-                      className="px-2 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-100 rounded-full text-xs"
+                      className="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs"
                     >
                       {tag}
                     </span>
@@ -80,7 +78,7 @@ const ProjectsSection = () => {
                   </a>
                   <a
                     href={project.githubUrl}
-                    className="px-4 py-2 border border-gray-300 dark:border-gray-600 rounded-md hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors text-sm"
+                    className="px-4 py-2 border border-gray-300 rounded-md hover:bg-gray-100 transition-colors text-sm"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
