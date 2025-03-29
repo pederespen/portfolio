@@ -5,9 +5,7 @@ const AboutSection = () => {
       className="min-h-screen py-20 flex items-center scroll-mt-16 px-4"
     >
       <div className="container mx-auto">
-        <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center mt-10">
-          About Me
-        </h2>
+        <h2 className="text-4xl font-bold mb-12 text-center mt-10">About Me</h2>
 
         <div className="grid md:grid-cols-2 gap-12 items-start">
           <div>

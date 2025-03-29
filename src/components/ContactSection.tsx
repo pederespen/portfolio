@@ -2,9 +2,7 @@ const ContactSection = () => {
   return (
     <section id="contact" className="py-20 flex items-center px-4 scroll-mt-16">
       <div className="container mx-auto">
-        <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center mt-10">
-          Contact
-        </h2>
+        <h2 className="text-3xl font-bold mb-12 text-center mt-10">Contact</h2>
 
         <div className="max-w-2xl mx-auto">
           <form className="space-y-6">

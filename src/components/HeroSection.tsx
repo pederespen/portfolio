@@ -6,13 +6,13 @@ const HeroSection = () => {
     >
       {/* Content */}
       <div className="z-10 text-center px-4 max-w-4xl mx-auto">
-        <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-purple-600">
+        <h1 className="text-7xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-purple-600">
           Hello, I&apos;m Peder
         </h1>
-        <p className="text-2xl md:text-3xl text-gray-700 mb-8">
+        <p className="text-3xl text-gray-700 mb-8">
           I&apos;m a Full Stack Developer
         </p>
-        <p className="text-lg md:text-xl text-gray-600 max-w-2xl mx-auto leading-relaxed">
+        <p className="text-xl text-gray-600 max-w-2xl mx-auto leading-relaxed">
           I enjoy developing and using code to solve business problems.
         </p>
       </div>
