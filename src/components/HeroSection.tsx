@@ -2,40 +2,43 @@ const HeroSection = () => {
   return (
     <section
       id="hero"
-      className="min-h-screen flex flex-col justify-between items-center px-4 pt-20 pb-6 scroll-mt-16 relative"
+      className="min-h-screen w-full flex flex-col justify-center items-center relative"
     >
-      <div className="flex-grow flex items-center justify-center">
-        <div className="max-w-xl text-center">
-          <h1 className="text-4xl md:text-6xl font-bold mb-4">
-            Hello, I&apos;m Peder
-          </h1>
-          <h2 className="text-2xl md:text-3xl mb-6">
-            I&apos;m a Full Stack Developer
-          </h2>
-          <p className="text-lg">
-            I enjoy developing and using code to solve business problems.
-          </p>
-        </div>
+      {/* Content */}
+      <div className="z-10 text-center px-4 max-w-4xl mx-auto">
+        <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-purple-600">
+          Hello, I&apos;m Peder
+        </h1>
+        <p className="text-2xl md:text-3xl text-gray-700 mb-8">
+          I&apos;m a Full Stack Developer
+        </p>
+        <p className="text-lg md:text-xl text-gray-600 max-w-2xl mx-auto leading-relaxed">
+          I enjoy developing and using code to solve business problems.
+        </p>
       </div>
 
-      <div className="mb-2">
-        <a href="#about" className="animate-bounce inline-block">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            className="h-6 w-6 text-blue-500"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-            strokeWidth={2}
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              d="M19 14l-7 7m0 0l-7-7m7 7V3"
-            />
-          </svg>
-        </a>
-      </div>
+      {/* Scroll indicator */}
+      <a
+        href="#about"
+        className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce cursor-pointer hover:text-blue-500 transition-colors duration-300"
+        aria-label="Scroll to About section"
+      >
+        <svg
+          width="24"
+          height="24"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+          className="text-gray-500 hover:text-blue-500 transition-colors duration-300"
+        >
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth="2"
+            d="M19 14l-7 7m0 0l-7-7m7 7V3"
+          />
+        </svg>
+      </a>
     </section>
   );
 };

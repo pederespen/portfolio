@@ -1,9 +1,6 @@
 const ContactSection = () => {
   return (
-    <section
-      id="contact"
-      className="min-h-screen py-20 flex items-center scroll-mt-16 px-4"
-    >
+    <section id="contact" className="py-20 flex items-center px-4 scroll-mt-16">
       <div className="container mx-auto">
         <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center mt-10">
           Contact
