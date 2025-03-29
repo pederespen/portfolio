@@ -1,6 +1,9 @@
 const ProjectsSection = () => {
   return (
-    <section id="projects" className="min-h-screen px-4 pt-20 pb-16">
+    <section
+      id="projects"
+      className="min-h-screen py-20 flex items-center scroll-mt-16 px-4"
+    >
       <div className="container mx-auto">
         <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center mt-10">
           My Projects

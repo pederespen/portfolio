@@ -2,7 +2,7 @@ const HeroSection = () => {
   return (
     <section
       id="hero"
-      className="min-h-screen flex flex-col justify-between items-center px-4 pt-20 pb-6 relative"
+      className="min-h-screen flex flex-col justify-between items-center px-4 pt-20 pb-6 scroll-mt-16 relative"
     >
       <div className="flex-grow flex items-center justify-center">
         <div className="max-w-xl text-center">
