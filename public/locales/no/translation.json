@@ -1,0 +1,44 @@
+{
+  "navbar": {
+    "home": "Hjem",
+    "about": "Om meg",
+    "projects": "Prosjekter",
+    "contact": "Kontakt"
+  },
+  "hero": {
+    "title": "Hei, jeg er Peder",
+    "subtitle": "Jeg liker å utvikle og bruke kode for å løse forretningsutfordringer"
+  },
+  "about": {
+    "title": "Om meg",
+    "subtitle": "Min bakgrunn",
+    "description": "Jeg er en lidenskapelig full-stack utvikler med ekspertise i moderne webteknologier. Jeg fokuserer på å skape skalerbare og brukervennlige applikasjoner som løser reelle problemer.",
+    "skills": {
+      "title": "Mine ferdigheter",
+      "frontend": "Frontend-utvikling",
+      "backend": "Backend-utvikling",
+      "databases": "Databaser",
+      "cloud": "Skytjenester"
+    }
+  },
+  "projects": {
+    "title": "Mine prosjekter",
+    "subtitle": "Nylige arbeider",
+    "viewProject": "Se prosjekt",
+    "viewCode": "Se kode"
+  },
+  "contact": {
+    "title": "Ta kontakt",
+    "subtitle": "Kontakt meg",
+    "name": "Navn",
+    "email": "E-post",
+    "message": "Melding",
+    "send": "Send melding",
+    "success": "Din melding er sendt!",
+    "error": "Noe gikk galt. Vennligst prøv igjen."
+  },
+  "footer": {
+    "copyright": "© 2024 Peder Espen. Alle rettigheter reservert.",
+    "madeWith": "Laget med Next.js og TailwindCSS"
+  }
+}

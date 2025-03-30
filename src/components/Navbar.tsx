@@ -2,9 +2,12 @@
 
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
+import { useTranslation } from "react-i18next";
+import { LanguageSwitcher } from "./language-switcher";
 
 export const Navbar = () => {
   const [visible, setVisible] = useState(false);
+  const { t } = useTranslation();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -42,7 +45,7 @@ export const Navbar = () => {
               href="#hero"
               className="text-gray-600 hover:text-blue-500 transition-colors"
             >
-              Home
+              {t("navbar.home")}
             </Link>
           </li>
           <li>
@@ -50,7 +53,7 @@ export const Navbar = () => {
               href="#about"
               className="text-gray-600 hover:text-blue-500 transition-colors"
             >
-              About
+              {t("navbar.about")}
             </Link>
           </li>
           <li>
@@ -58,7 +61,7 @@ export const Navbar = () => {
               href="#projects"
               className="text-gray-600 hover:text-blue-500 transition-colors"
             >
-              Projects
+              {t("navbar.projects")}
             </Link>
           </li>
           <li>
@@ -66,12 +69,13 @@ export const Navbar = () => {
               href="#contact"
               className="text-gray-600 hover:text-blue-500 transition-colors"
             >
-              Contact
+              {t("navbar.contact")}
             </Link>
           </li>
         </ul>
 
         <div className="flex items-center space-x-4">
+          <LanguageSwitcher />
           <a
             href="https://github.com/pespen"
             target="_blank"

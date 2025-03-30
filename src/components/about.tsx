@@ -1,10 +1,17 @@
+"use client";
+
 import Image from "next/image";
+import { useTranslation } from "react-i18next";
 
 export const About = () => {
+  const { t } = useTranslation();
+
   return (
     <section id="about" className="min-h-screen flex items-center scroll-mt-4">
       <div className="container mx-auto w-[85%]">
-        <h2 className="text-3xl font-bold mb-12 text-center mt-10">About</h2>
+        <h2 className="text-3xl font-bold mb-12 text-center mt-10">
+          {t("about.title")}
+        </h2>
 
         <div className="grid grid-cols-2 gap-12 items-start">
           <div className="flex flex-col">
@@ -22,22 +29,16 @@ export const About = () => {
               </div>
             </div>
             <div className="mt-4">
-              <p className="text-gray-700 mb-4">
-                I&apos;m a passionate Full Stack Developer with expertise in
-                modern web technologies. I enjoy building responsive and
-                user-friendly applications that solve real-world problems.
-              </p>
-              <p className="text-gray-700 mb-4">
-                My approach combines clean code principles with an eye for
-                design, creating solutions that are both technically sound and
-                visually appealing.
-              </p>
+              <p className="text-gray-700 mb-4">{t("about.description")}</p>
+              <p className="text-gray-700 mb-4">{t("about.description")}</p>
             </div>
           </div>
 
           <div className="space-y-6">
             <div>
-              <h3 className="text-xl font-bold mb-3">My Skills</h3>
+              <h3 className="text-xl font-bold mb-3">
+                {t("about.skills.title")}
+              </h3>
               <div className="flex flex-wrap gap-2">
                 {[
                   "React",

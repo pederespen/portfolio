@@ -1,8 +1,16 @@
+"use client";
+
+import { useTranslation } from "react-i18next";
+
 export const Contact = () => {
+  const { t } = useTranslation();
+
   return (
     <section id="contact" className="py-20 flex items-center scroll-mt-16">
       <div className="container mx-auto w-[85%]">
-        <h2 className="text-3xl font-bold mb-12 text-center mt-10">Contact</h2>
+        <h2 className="text-3xl font-bold mb-12 text-center mt-10">
+          {t("contact.title")}
+        </h2>
 
         <div className="max-w-2xl mx-auto">
           <form className="space-y-6">
@@ -11,7 +19,7 @@ export const Contact = () => {
                 type="text"
                 id="name"
                 className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 bg-gray-50 placeholder-gray-500"
-                placeholder="Your Name"
+                placeholder={t("contact.name")}
                 required
               />
             </div>
@@ -21,7 +29,7 @@ export const Contact = () => {
                 type="email"
                 id="email"
                 className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 bg-gray-50 placeholder-gray-500"
-                placeholder="Your Email"
+                placeholder={t("contact.email")}
                 required
               />
             </div>
@@ -31,7 +39,7 @@ export const Contact = () => {
                 id="message"
                 rows={4}
                 className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 bg-gray-50 placeholder-gray-500"
-                placeholder="Message"
+                placeholder={t("contact.message")}
                 required
               />
             </div>
@@ -41,7 +49,7 @@ export const Contact = () => {
                 type="submit"
                 className="inline-block px-6 py-3 bg-blue-500 text-white font-bold rounded-md hover:bg-blue-600 transition-colors mt-4 w-auto"
               >
-                Send Message
+                {t("contact.send")}
               </button>
             </div>
           </form>

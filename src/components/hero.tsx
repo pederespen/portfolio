@@ -15,9 +15,6 @@ export const Hero = () => {
           {t("hero.title")}
         </h1>
         <p className="text-3xl text-gray-700 mb-8">{t("hero.subtitle")}</p>
-        <p className="text-xl text-gray-600 max-w-2xl mx-auto leading-relaxed">
-          {t("subtitle")}
-        </p>
       </div>
 
       {/* Scroll indicator */}
