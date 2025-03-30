@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-const AboutSection = () => {
+export const About = () => {
   return (
     <section id="about" className="min-h-screen flex items-center scroll-mt-4">
       <div className="container mx-auto w-[85%]">
@@ -66,5 +66,3 @@ const AboutSection = () => {
     </section>
   );
 };
-
-export default AboutSection;

@@ -3,7 +3,7 @@
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
 
-const Navbar = () => {
+export const Navbar = () => {
   const [visible, setVisible] = useState(false);
 
   useEffect(() => {
@@ -131,5 +131,3 @@ const Navbar = () => {
     </nav>
   );
 };
-
-export default Navbar;

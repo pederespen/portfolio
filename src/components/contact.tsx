@@ -1,4 +1,4 @@
-const ContactSection = () => {
+export const Contact = () => {
   return (
     <section id="contact" className="py-20 flex items-center scroll-mt-16">
       <div className="container mx-auto w-[85%]">
@@ -50,5 +50,3 @@ const ContactSection = () => {
     </section>
   );
 };
-
-export default ContactSection;

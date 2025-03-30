@@ -1,4 +1,4 @@
-const ProjectsSection = () => {
+export const Projects = () => {
   return (
     <section
       id="projects"
@@ -20,5 +20,3 @@ const ProjectsSection = () => {
     </section>
   );
 };
-
-export default ProjectsSection;

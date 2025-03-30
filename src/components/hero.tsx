@@ -1,4 +1,9 @@
-const HeroSection = () => {
+"use client";
+
+import { useTranslation } from "react-i18next";
+
+export const Hero = () => {
+  const { t } = useTranslation();
   return (
     <section
       id="hero"
@@ -7,13 +12,11 @@ const HeroSection = () => {
       {/* Content */}
       <div className="z-10 text-center max-w-4xl mx-auto w-[85%]">
         <h1 className="text-7xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-teal-500 to-indigo-600">
-          Hello, I&apos;m Peder
+          {t("hero.title")}
         </h1>
-        <p className="text-3xl text-gray-700 mb-8">
-          I&apos;m a Full Stack Developer
-        </p>
+        <p className="text-3xl text-gray-700 mb-8">{t("hero.subtitle")}</p>
         <p className="text-xl text-gray-600 max-w-2xl mx-auto leading-relaxed">
-          I enjoy developing and using code to solve business problems.
+          {t("subtitle")}
         </p>
       </div>
 
@@ -42,5 +45,3 @@ const HeroSection = () => {
     </section>
   );
 };
-
-export default HeroSection;

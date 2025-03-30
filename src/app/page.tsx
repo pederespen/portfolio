@@ -1,18 +1,18 @@
-import Navbar from "../components/Navbar";
-import HeroSection from "../components/HeroSection";
-import AboutSection from "../components/AboutSection";
-import ProjectsSection from "../components/ProjectsSection";
-import ContactSection from "../components/ContactSection";
-import Footer from "../components/Footer";
+import { About } from "@/components/about";
+import { Contact } from "@/components/contact";
+import { Footer } from "@/components/footer";
+import { Hero } from "@/components/hero";
+import { Navbar } from "@/components/navbar";
+import { Projects } from "@/components/projects";
 
-export default function Home() {
+export default function App() {
   return (
     <div className="min-h-screen">
       <Navbar />
-      <HeroSection />
-      <AboutSection />
-      <ProjectsSection />
-      <ContactSection />
+      <Hero />
+      <About />
+      <Projects />
+      <Contact />
       <Footer />
     </div>
   );
