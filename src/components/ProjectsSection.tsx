@@ -2,7 +2,7 @@ const ProjectsSection = () => {
   return (
     <section
       id="projects"
-      className="min-h-screen py-20 flex items-center scroll-mt-16 px-4"
+      className="min-h-screen py-20 flex items-center scroll-mt-16"
     >
       <div className="container mx-auto w-[85%]">
         <div className="flex flex-col items-center">
