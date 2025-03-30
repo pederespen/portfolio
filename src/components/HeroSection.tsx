@@ -5,8 +5,8 @@ const HeroSection = () => {
       className="min-h-screen w-full flex flex-col justify-center items-center relative"
     >
       {/* Content */}
-      <div className="z-10 text-center px-4 max-w-4xl mx-auto">
-        <h1 className="text-7xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-purple-600">
+      <div className="z-10 text-center px-4 max-w-4xl mx-auto w-[85%]">
+        <h1 className="text-7xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-teal-500 to-indigo-600">
           Hello, I&apos;m Peder
         </h1>
         <p className="text-3xl text-gray-700 mb-8">
