@@ -41,16 +41,27 @@ export const About = () => {
               </h3>
               <div className="flex flex-wrap gap-2">
                 {[
-                  "React",
-                  "Next.js",
-                  "TypeScript",
-                  "JavaScript",
                   "HTML",
                   "CSS",
-                  "Tailwind CSS",
-                  "Node.js",
-                  "Git",
-                  "Responsive Design",
+                  "JavaScript",
+                  "TypeScript",
+                  "React",
+                  "Svelte/Sveltekit",
+                  "DevOps",
+                  "CI/CD",
+                  "Python",
+                  "Django",
+                  "PostgreSQL",
+                  "SQL",
+                  "MongoDB",
+                  "Azure Service Bus",
+                  "Container Apps",
+                  "Docker",
+                  "Github",
+                  "Github Actions",
+                  "Excel VBA",
+                  "Machine Learning",
+                  "Computer Vision",
                 ].map((skill) => (
                   <span
                     key={skill}
