@@ -11,7 +11,7 @@
   },
   "about": {
     "title": "Om meg",
-    "subtitle": "Min bakgrunn",
+    "location": "Oslo, Norge",
     "description": "Jeg er en lidenskapelig full-stack utvikler med ekspertise i moderne webteknologier. Jeg fokuserer på å skape skalerbare og brukervennlige applikasjoner som løser reelle problemer.",
     "skills": {
       "title": "Mine ferdigheter",
@@ -23,13 +23,11 @@
   },
   "projects": {
     "title": "Mine prosjekter",
-    "subtitle": "Nylige arbeider",
     "viewProject": "Se prosjekt",
     "viewCode": "Se kode"
   },
   "contact": {
     "title": "Ta kontakt",
-    "subtitle": "Kontakt meg",
     "name": "Navn",
     "email": "E-post",
     "message": "Melding",

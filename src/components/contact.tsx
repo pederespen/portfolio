@@ -12,7 +12,7 @@ export const Contact = () => {
           {t("contact.title")}
         </h2>
 
-        <div className="max-w-2xl mx-auto">
+        <div className="max-w-xl mx-auto">
           <form className="space-y-6">
             <div>
               <input

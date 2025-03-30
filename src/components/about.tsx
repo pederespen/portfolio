@@ -25,7 +25,7 @@ export const About = () => {
               />
               <div className="flex flex-col text-center sm:text-left justify-center mt-4 sm:mt-0">
                 <h3 className="text-2xl font-bold mb-1">Peder Espen</h3>
-                <p className="text-gray-600 mb-4">Oslo, Norway</p>
+                <p className="text-gray-600 mb-4">{t("about.location")}</p>
               </div>
             </div>
             <div className="mt-4">

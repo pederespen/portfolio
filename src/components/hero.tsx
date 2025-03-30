@@ -14,9 +14,7 @@ export const Hero = () => {
         <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-teal-500 to-indigo-600">
           {t("hero.title")}
         </h1>
-        <p className="text-xl sm:text-2xl md:text-3xl text-gray-700 mb-8">
-          {t("hero.subtitle")}
-        </p>
+        <p className="text-2xl text-gray-700 mb-8">{t("hero.subtitle")}</p>
       </div>
 
       {/* Scroll indicator */}
