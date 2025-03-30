@@ -36,9 +36,5 @@
     "send": "Send melding",
     "success": "Din melding er sendt!",
     "error": "Noe gikk galt. Vennligst prøv igjen."
-  },
-  "footer": {
-    "copyright": "© 2024 Peder Espen. Alle rettigheter reservert.",
-    "madeWith": "Laget med Next.js og TailwindCSS"
   }
 }

@@ -3,10 +3,10 @@
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import { useTranslation } from "react-i18next";
-import { LanguageSwitcher } from "./language-switcher";
 
 export const Navbar = () => {
   const [visible, setVisible] = useState(false);
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const { t } = useTranslation();
 
   useEffect(() => {
@@ -32,6 +32,17 @@ export const Navbar = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  const toggleMobileMenu = () => {
+    setMobileMenuOpen(!mobileMenuOpen);
+  };
+
+  const navLinks = [
+    { href: "#hero", text: t("navbar.home") },
+    { href: "#about", text: t("navbar.about") },
+    { href: "#projects", text: t("navbar.projects") },
+    { href: "#contact", text: t("navbar.contact") },
+  ];
+
   return (
     <nav
       className={`fixed top-0 w-full bg-white/95 backdrop-blur-sm z-10 py-6 shadow-sm transition-all duration-300 ${
@@ -39,43 +50,52 @@ export const Navbar = () => {
       }`}
     >
       <div className="container mx-auto flex justify-between items-center w-[85%]">
-        <ul className="flex space-x-8">
-          <li>
-            <Link
-              href="#hero"
-              className="text-gray-600 hover:text-blue-500 transition-colors"
-            >
-              {t("navbar.home")}
-            </Link>
-          </li>
-          <li>
-            <Link
-              href="#about"
-              className="text-gray-600 hover:text-blue-500 transition-colors"
-            >
-              {t("navbar.about")}
-            </Link>
-          </li>
-          <li>
-            <Link
-              href="#projects"
-              className="text-gray-600 hover:text-blue-500 transition-colors"
-            >
-              {t("navbar.projects")}
-            </Link>
-          </li>
-          <li>
-            <Link
-              href="#contact"
-              className="text-gray-600 hover:text-blue-500 transition-colors"
-            >
-              {t("navbar.contact")}
-            </Link>
-          </li>
+        {/* Desktop Navigation */}
+        <ul className="hidden md:flex space-x-8">
+          {navLinks.map((link, index) => (
+            <li key={index}>
+              <Link
+                href={link.href}
+                className="text-gray-600 hover:text-blue-500 transition-colors"
+              >
+                {link.text}
+              </Link>
+            </li>
+          ))}
         </ul>
 
+        {/* Mobile Hamburger Button */}
+        <button
+          className="md:hidden text-gray-500 focus:outline-none"
+          onClick={toggleMobileMenu}
+          aria-label="Toggle mobile menu"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            className="h-6 w-6"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            {mobileMenuOpen ? (
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M6 18L18 6M6 6l12 12"
+              />
+            ) : (
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M4 6h16M4 12h16M4 18h16"
+              />
+            )}
+          </svg>
+        </button>
+
         <div className="flex items-center space-x-4">
-          <LanguageSwitcher />
           <a
             href="https://github.com/pespen"
             target="_blank"
@@ -132,6 +152,25 @@ export const Navbar = () => {
           </a>
         </div>
       </div>
+
+      {/* Mobile Menu */}
+      {mobileMenuOpen && (
+        <div className="md:hidden absolute top-full left-0 w-full bg-white shadow-md py-4 px-6 z-20">
+          <ul className="flex flex-col space-y-4">
+            {navLinks.map((link, index) => (
+              <li key={index}>
+                <Link
+                  href={link.href}
+                  className="text-gray-600 hover:text-blue-500 transition-colors block py-2"
+                  onClick={() => setMobileMenuOpen(false)}
+                >
+                  {link.text}
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </div>
+      )}
     </nav>
   );
 };

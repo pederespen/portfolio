@@ -13,9 +13,9 @@ export const About = () => {
           {t("about.title")}
         </h2>
 
-        <div className="grid grid-cols-2 gap-12 items-start">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
           <div className="flex flex-col">
-            <div className="flex flex-row items-center gap-6 mb-6">
+            <div className="flex flex-col sm:flex-row items-center gap-6 mb-6">
               <Image
                 src="/headshot.webp"
                 alt="Profile photo"
@@ -23,7 +23,7 @@ export const About = () => {
                 height={320}
                 className="rounded-full object-cover border-2 border-gray-200 shadow-lg"
               />
-              <div className="flex flex-col text-left justify-center">
+              <div className="flex flex-col text-center sm:text-left justify-center mt-4 sm:mt-0">
                 <h3 className="text-2xl font-bold mb-1">Peder Espen</h3>
                 <p className="text-gray-600 mb-4">Oslo, Norway</p>
               </div>
