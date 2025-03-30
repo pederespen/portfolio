@@ -19,8 +19,8 @@ export const About = () => {
               <Image
                 src="/headshot.webp"
                 alt="Profile photo"
-                width={320}
-                height={320}
+                width={240}
+                height={240}
                 className="rounded-full object-cover border-2 border-gray-200 shadow-lg"
               />
               <div className="flex flex-col text-center sm:text-left justify-center mt-4 sm:mt-0">
@@ -34,42 +34,86 @@ export const About = () => {
             </div>
           </div>
 
-          <div className="space-y-6">
+          {/* Skills section */}
+          <div className="flex flex-col space-y-6 justify-center h-full">
             <div>
-              <h3 className="text-xl font-bold mb-3">
-                {t("about.skills.title")}
-              </h3>
-              <div className="flex flex-wrap gap-2">
-                {[
-                  "HTML",
-                  "CSS",
-                  "JavaScript",
-                  "TypeScript",
-                  "React",
-                  "Svelte/Sveltekit",
-                  "DevOps",
-                  "CI/CD",
-                  "Python",
-                  "Django",
-                  "PostgreSQL",
-                  "SQL",
-                  "MongoDB",
-                  "Azure Service Bus",
-                  "Container Apps",
-                  "Docker",
-                  "Github",
-                  "Github Actions",
-                  "Excel VBA",
-                  "Machine Learning",
-                  "Computer Vision",
-                ].map((skill) => (
-                  <span
-                    key={skill}
-                    className="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm"
-                  >
-                    {skill}
-                  </span>
-                ))}
+              {/* Frontend */}
+              <div className="mb-4">
+                <div className="flex flex-wrap gap-2">
+                  {[
+                    "HTML",
+                    "CSS",
+                    "JavaScript",
+                    "TypeScript",
+                    "React",
+                    "Svelte/Sveltekit",
+                  ].map((skill) => (
+                    <span
+                      key={skill}
+                      className="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm"
+                    >
+                      {skill}
+                    </span>
+                  ))}
+                </div>
+              </div>
+
+              {/* Backend */}
+              <div className="mb-4">
+                <div className="flex flex-wrap gap-2">
+                  {[
+                    "Python",
+                    "Django",
+                    "PostgreSQL",
+                    "SQL",
+                    "MongoDB",
+                    "Azure Service Bus",
+                  ].map((skill) => (
+                    <span
+                      key={skill}
+                      className="px-3 py-1 bg-green-100 text-green-800 rounded-full text-sm"
+                    >
+                      {skill}
+                    </span>
+                  ))}
+                </div>
+              </div>
+
+              {/* DevOps */}
+              <div className="mb-4">
+                <div className="flex flex-wrap gap-2">
+                  {[
+                    "DevOps",
+                    "CI/CD",
+                    "Container Apps",
+                    "Docker",
+                    "Github",
+                    "Github Actions",
+                  ].map((skill) => (
+                    <span
+                      key={skill}
+                      className="px-3 py-1 bg-purple-100 text-purple-800 rounded-full text-sm"
+                    >
+                      {skill}
+                    </span>
+                  ))}
+                </div>
+              </div>
+
+              {/* Other Skills */}
+              <div>
+                <div className="flex flex-wrap gap-2">
+                  {["Excel VBA", "Machine Learning", "Computer Vision"].map(
+                    (skill) => (
+                      <span
+                        key={skill}
+                        className="px-3 py-1 bg-amber-100 text-amber-800 rounded-full text-sm"
+                      >
+                        {skill}
+                      </span>
+                    )
+                  )}
+                </div>
               </div>
             </div>
           </div>

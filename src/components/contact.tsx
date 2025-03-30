@@ -47,7 +47,7 @@ export const Contact = () => {
             <div className="text-left">
               <button
                 type="submit"
-                className="inline-block px-6 py-3 bg-blue-500 text-white font-bold rounded-md hover:bg-blue-600 transition-colors mt-4 w-auto"
+                className="inline-block px-6 py-3 bg-blue-800 text-blue-100 font-bold rounded-md hover:bg-blue-200 transition-colors mt-4 w-auto cursor-pointer"
               >
                 {t("contact.send")}
               </button>
