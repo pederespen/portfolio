@@ -6,7 +6,7 @@ const ProjectsSection = () => {
     >
       <div className="container mx-auto w-[85%]">
         <div className="flex flex-col items-center">
-          <h2 className="text-4xl font-bold mb-10 text-center">My Projects</h2>
+          <h2 className="text-3xl font-bold mb-10 text-center">My Projects</h2>
 
           <div className="max-w-xl mx-auto text-center mt-6">
             <p className="text-md text-gray-700">
