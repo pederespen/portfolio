@@ -6,9 +6,9 @@ const AboutSection = () => {
       <div className="container mx-auto w-[85%]">
         <h2 className="text-3xl font-bold mb-12 text-center mt-10">About</h2>
 
-        <div className="grid md:grid-cols-2 gap-12 items-start">
+        <div className="grid grid-cols-2 gap-12 items-start">
           <div className="flex flex-col">
-            <div className="flex flex-col md:flex-row items-center md:items-center gap-6 mb-6">
+            <div className="flex flex-row items-center gap-6 mb-6">
               <Image
                 src="/headshot.webp"
                 alt="Profile photo"
@@ -17,7 +17,7 @@ const AboutSection = () => {
                 className="rounded-full object-cover border-2 border-gray-200 shadow-lg"
               />
               <div className="flex flex-col text-left justify-center">
-                <h3 className="text-2xl font-bold mb-1">Peder Spenning</h3>
+                <h3 className="text-2xl font-bold mb-1">Peder Espen</h3>
                 <p className="text-gray-600 mb-4">Oslo, Norway</p>
               </div>
             </div>
