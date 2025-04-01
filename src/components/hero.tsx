@@ -11,7 +11,7 @@ export const Hero = () => {
     >
       {/* Content */}
       <div className="z-10 text-center max-w-4xl mx-auto w-[85%]">
-        <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-teal-500 to-indigo-600">
+        <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-teal-500 to-indigo-600 leading-tight">
           {t("hero.title")}
         </h1>
         <p className="text-2xl text-gray-700 mb-8">{t("hero.subtitle")}</p>
