@@ -12,27 +12,17 @@
   "about": {
     "title": "Om meg",
     "location": "Oslo, Norge",
-    "description": "Jeg er en lidenskapelig full-stack utvikler med ekspertise i moderne webteknologier. Jeg fokuserer på å skape skalerbare og brukervennlige applikasjoner som løser reelle problemer.",
-    "skills": {
-      "title": "Mine ferdigheter",
-      "frontend": "Frontend-utvikling",
-      "backend": "Backend-utvikling",
-      "databases": "Databaser",
-      "cloud": "Skytjenester"
-    }
+    "description": "Jeg er en full-stack utvikler som elsker å jobbe med moderne webteknologier. Jeg har bygget skalerbare apper og responsive nettsider og jeg er spesielt interessert i maskinlæring og kunstig intelligens. Jeg holder meg oppdatert på nye teknologier og rammeverk for å skape bedre løsninger. Når jeg ikke koder, liker jeg å lese, trene eller være ute på discgolfbanen."
   },
   "projects": {
     "title": "Mine prosjekter",
-    "viewProject": "Se prosjekt",
-    "viewCode": "Se kode"
+    "message": "Jeg jobber for tiden med spennende prosjekter som vil bli vist her. Kom gjerne tilbake senere eller kontakt meg for mer informasjon om arbeidet mitt."
   },
   "contact": {
     "title": "Ta kontakt",
     "name": "Navn",
     "email": "E-post",
     "message": "Melding",
-    "send": "Send melding",
-    "success": "Din melding er sendt!",
-    "error": "Noe gikk galt. Vennligst prøv igjen."
+    "send": "Send melding"
   }
 }

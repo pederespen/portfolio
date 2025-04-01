@@ -17,11 +17,7 @@ export const Projects = () => {
           </h2>
 
           <div className="max-w-xl mx-auto text-center mt-6">
-            <p className="text-md text-gray-700">
-              I&apos;m currently working on some exciting projects that will be
-              showcased here. Feel free to check back later or contact me for
-              more information about my work.
-            </p>
+            <p className="text-md text-gray-700">{t("projects.message")}</p>
           </div>
         </div>
       </div>

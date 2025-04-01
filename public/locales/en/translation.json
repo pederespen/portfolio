@@ -12,31 +12,17 @@
   "about": {
     "title": "About Me",
     "location": "Oslo, Norway",
-    "description": "I am a passionate full-stack developer with expertise in modern web technologies. I focus on creating scalable and user-friendly applications that solve real-world problems.",
-    "skills": {
-      "title": "My Skills",
-      "frontend": "Frontend Development",
-      "backend": "Backend Development",
-      "databases": "Databases",
-      "cloud": "Cloud Services"
-    }
+    "description": "I'm a full-stack developer who loves working with modern web technologies. I've built a variety of scalable apps and responsive websites, and I'm also really interested in machine learning and AI. I'm always exploring new technologies and frameworks to create better solutions. When I'm not coding, you'll find me reading, working out or on the disc golf course."
   },
   "projects": {
     "title": "My Projects",
-    "viewProject": "View Project",
-    "viewCode": "View Code"
+    "message": "I'm currently working on some exciting projects that will be showcased here. Feel free to check back later or contact me for more information about my work."
   },
   "contact": {
     "title": "Get In Touch",
     "name": "Name",
     "email": "Email",
     "message": "Message",
-    "send": "Send Message",
-    "success": "Your message has been sent!",
-    "error": "Something went wrong. Please try again."
-  },
-  "footer": {
-    "copyright": "© 2024 Peder Espen. All rights reserved.",
-    "madeWith": "Made with Next.js and TailwindCSS"
+    "send": "Send Message"
   }
 }

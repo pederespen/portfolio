@@ -30,7 +30,6 @@ export const About = () => {
             </div>
             <div className="mt-4">
               <p className="text-gray-700 mb-4">{t("about.description")}</p>
-              <p className="text-gray-700 mb-4">{t("about.description")}</p>
             </div>
           </div>
 
