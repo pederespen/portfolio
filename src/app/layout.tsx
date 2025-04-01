@@ -3,9 +3,8 @@ import "./globals.css";
 import { LanguageProvider } from "./language-provider";
 
 export const metadata: Metadata = {
-  title: "Peder | Full Stack Developer",
-  description:
-    "Full Stack Developer portfolio - I enjoy developing and using code to solve business problems",
+  title: "Peder Espen | Portfolio",
+  description: "Portfolio website for Peder Espen",
 };
 
 export default function RootLayout({
