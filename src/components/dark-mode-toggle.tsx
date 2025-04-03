@@ -61,7 +61,7 @@ export const DarkModeToggle = () => {
   return (
     <button
       onClick={toggleMode}
-      className="relative inline-flex h-6 w-11 items-center rounded-full bg-gray-200"
+      className="relative inline-flex h-6 w-11 items-center rounded-full bg-gray-200 dark:bg-neutral-700"
       aria-pressed={isDarkMode}
       aria-label={isDarkMode ? "Switch to light mode" : "Switch to dark mode"}
     >

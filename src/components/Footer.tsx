@@ -4,7 +4,7 @@ export const Footer = () => {
   return (
     <footer className="py-6">
       <div className="container mx-auto">
-        <div className="text-sm text-gray-500 dark:text-gray-400 text-center">
+        <div className="text-sm text-gray-500 dark:text-gray-300 text-center">
           Peder Espen | © 2025
         </div>
       </div>

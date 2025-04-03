@@ -7,7 +7,7 @@ import { Projects } from "@/components/projects";
 
 export default function App() {
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen dark:bg-neutral-900">
       <Navbar />
       <Hero />
       <About />

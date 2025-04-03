@@ -8,7 +8,7 @@ export const Contact = () => {
   return (
     <section id="contact" className="py-20 flex items-center scroll-mt-16">
       <div className="container mx-auto w-[85%]">
-        <h2 className="text-3xl font-bold mb-12 text-center mt-10">
+        <h2 className="text-3xl font-bold mb-12 text-center mt-10 text-black dark:text-gray-300">
           {t("contact.title")}
         </h2>
 
