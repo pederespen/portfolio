@@ -47,7 +47,7 @@ export const Navbar = () => {
 
   return (
     <nav
-      className={`fixed top-0 w-full bg-white/95 backdrop-blur-sm z-10 py-6 shadow-sm transition-all duration-300 ${
+      className={`fixed top-0 w-full bg-white/95 dark:bg-black/95 backdrop-blur-sm z-10 py-6 shadow-sm dark:shadow-[0_4px_6px_-1px_rgba(255,255,255,0.05)] transition-all duration-300 ${
         visible ? "translate-y-0 opacity-100" : "-translate-y-full opacity-0"
       }`}
     >
@@ -58,7 +58,7 @@ export const Navbar = () => {
             <li key={index}>
               <Link
                 href={link.href}
-                className="text-gray-600 hover:text-blue-500 transition-colors"
+                className="text-gray-600 dark:text-gray-300 hover:text-blue-500 dark:hover:text-blue-400 transition-colors"
               >
                 {link.text}
               </Link>
@@ -68,7 +68,7 @@ export const Navbar = () => {
 
         {/* Mobile Hamburger Button */}
         <button
-          className="md:hidden text-gray-500 focus:outline-none"
+          className="md:hidden text-gray-500 dark:text-gray-400 focus:outline-none"
           onClick={toggleMobileMenu}
           aria-label="Toggle mobile menu"
         >
@@ -102,13 +102,13 @@ export const Navbar = () => {
             <DarkModeToggle />
             <LanguageSwitcher />
           </div>
-          <div className="hidden md:block h-6 border-l border-gray-300"></div>
+          <div className="hidden md:block h-6 border-l border-gray-300 dark:border-gray-700"></div>
           <div className="hidden md:flex items-center space-x-4 ml-3">
             <a
               href="https://github.com/pespen"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-gray-500 hover:text-blue-500 transition-colors"
+              className="text-gray-500 dark:text-gray-400 hover:text-blue-500 dark:hover:text-blue-400 transition-colors"
               aria-label="GitHub"
             >
               <svg
@@ -124,7 +124,7 @@ export const Navbar = () => {
               href="https://linkedin.com/in/peder-espen-0a3ab6200"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-gray-500 hover:text-blue-500 transition-colors"
+              className="text-gray-500 dark:text-gray-400 hover:text-blue-500 dark:hover:text-blue-400 transition-colors"
               aria-label="LinkedIn"
             >
               <svg
@@ -139,7 +139,7 @@ export const Navbar = () => {
             <a
               href="/CV Peder Espen.pdf"
               download
-              className="text-gray-500 hover:text-blue-500 transition-colors duration-300 flex items-center gap-1"
+              className="text-gray-500 dark:text-gray-400 hover:text-blue-500 dark:hover:text-blue-400 transition-colors duration-300 flex items-center gap-1"
               aria-label="Download CV"
             >
               <svg
@@ -164,20 +164,20 @@ export const Navbar = () => {
 
       {/* Mobile Menu */}
       {mobileMenuOpen && (
-        <div className="md:hidden absolute top-full left-0 w-full bg-white shadow-md py-4 px-6 z-20">
+        <div className="md:hidden absolute top-full left-0 w-full bg-white dark:bg-gray-900 shadow-md py-4 px-6 z-20">
           <ul className="flex flex-col space-y-4">
             {navLinks.map((link, index) => (
               <li key={index}>
                 <Link
                   href={link.href}
-                  className="text-gray-600 hover:text-blue-500 transition-colors block py-2"
+                  className="text-gray-600 dark:text-gray-300 hover:text-blue-500 dark:hover:text-blue-400 transition-colors block py-2"
                   onClick={() => setMobileMenuOpen(false)}
                 >
                   {link.text}
                 </Link>
               </li>
             ))}
-            <li className="pt-4 border-t border-gray-100">
+            <li className="pt-4 border-t border-gray-100 dark:border-gray-800">
               <div className="flex flex-wrap items-center justify-between mt-1">
                 <div className="flex items-center space-x-3 mb-2 sm:mb-0">
                   <DarkModeToggle />
@@ -188,7 +188,7 @@ export const Navbar = () => {
                     href="https://github.com/pespen"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-gray-500 hover:text-blue-500 transition-colors"
+                    className="text-gray-500 dark:text-gray-400 hover:text-blue-500 dark:hover:text-blue-400 transition-colors"
                     aria-label="GitHub"
                   >
                     <svg
@@ -204,7 +204,7 @@ export const Navbar = () => {
                     href="https://linkedin.com/in/peder-espen-0a3ab6200"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-gray-500 hover:text-blue-500 transition-colors"
+                    className="text-gray-500 dark:text-gray-400 hover:text-blue-500 dark:hover:text-blue-400 transition-colors"
                     aria-label="LinkedIn"
                   >
                     <svg
@@ -219,7 +219,7 @@ export const Navbar = () => {
                   <a
                     href="/CV Peder Espen.pdf"
                     download
-                    className="text-gray-500 hover:text-blue-500 transition-colors duration-300 flex items-center gap-1"
+                    className="text-gray-500 dark:text-gray-400 hover:text-blue-500 dark:hover:text-blue-400 transition-colors duration-300 flex items-center gap-1"
                     aria-label="Download CV"
                   >
                     <svg

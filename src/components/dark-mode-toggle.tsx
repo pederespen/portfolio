@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 // SVG Light/Dark Mode Icons
 const LightIcon = () => (
@@ -32,8 +32,30 @@ const DarkIcon = () => (
 export const DarkModeToggle = () => {
   const [isDarkMode, setIsDarkMode] = useState(false);
 
+  // Initialize dark mode based on localStorage or system preference
+  useEffect(() => {
+    // Check if theme exists in localStorage
+    const savedTheme = localStorage.getItem("theme");
+    const prefersDark = window.matchMedia(
+      "(prefers-color-scheme: dark)"
+    ).matches;
+
+    // Set initial state based on saved preference or system preference
+    const shouldSetDark = savedTheme === "dark" || (!savedTheme && prefersDark);
+    setIsDarkMode(shouldSetDark);
+
+    // Apply the initial theme to the HTML element
+    document.documentElement.classList.toggle("dark", shouldSetDark);
+  }, []);
+
   const toggleMode = () => {
     setIsDarkMode(!isDarkMode);
+
+    // Toggle the dark class on the HTML element
+    document.documentElement.classList.toggle("dark");
+
+    // Save the preference to localStorage
+    localStorage.setItem("theme", !isDarkMode ? "dark" : "light");
   };
 
   return (

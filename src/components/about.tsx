@@ -24,12 +24,18 @@ export const About = () => {
                 className="rounded-full object-cover border-2 border-gray-200 shadow-lg"
               />
               <div className="flex flex-col text-center sm:text-left justify-center mt-4 sm:mt-0">
-                <h3 className="text-2xl font-bold mb-1">Peder Espen</h3>
-                <p className="text-gray-600 mb-4">{t("about.location")}</p>
+                <h3 className="text-2xl font-bold mb-1 text-black dark:text-gray-300">
+                  Peder Espen
+                </h3>
+                <p className="text-gray-600 dark:text-gray-300 mb-4">
+                  {t("about.location")}
+                </p>
               </div>
             </div>
             <div className="mt-4">
-              <p className="text-gray-700 mb-4">{t("about.description")}</p>
+              <p className="text-gray-700 dark:text-gray-300 mb-4">
+                {t("about.description")}
+              </p>
             </div>
           </div>
 

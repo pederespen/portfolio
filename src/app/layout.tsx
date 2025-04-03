@@ -14,7 +14,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body>
+      <body className="transition-colors duration-200">
         <LanguageProvider>{children}</LanguageProvider>
       </body>
     </html>
