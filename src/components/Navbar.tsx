@@ -164,7 +164,7 @@ export const Navbar = () => {
 
       {/* Mobile Menu */}
       {mobileMenuOpen && (
-        <div className="md:hidden absolute top-full left-0 w-full bg-white dark:bg-gray-900 shadow-md py-4 px-6 z-20">
+        <div className="md:hidden absolute top-full left-0 w-full bg-white/95 dark:bg-black/95 backdrop-blur-sm shadow-md dark:shadow-[0_4px_6px_-1px_rgba(255,255,255,0.05)] py-4 px-6 z-20">
           <ul className="flex flex-col space-y-4">
             {navLinks.map((link, index) => (
               <li key={index}>
