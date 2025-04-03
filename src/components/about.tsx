@@ -15,15 +15,15 @@ export const About = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
           <div className="flex flex-col">
-            <div className="flex flex-col sm:flex-row items-center gap-6 mb-6">
+            <div className="flex flex-row justify-center">
               <Image
                 src="/headshot.webp"
                 alt="Profile photo"
                 width={240}
                 height={240}
-                className="rounded-full object-cover border-2 border-gray-200 shadow-lg"
+                className="rounded-full object-cover border-2 border-gray-200 shadow-lg mr-6 mb-4"
               />
-              <div className="flex flex-col text-center sm:text-left justify-center mt-4 sm:mt-0">
+              <div className="flex flex-col text-center justify-center">
                 <h3 className="text-2xl font-bold mb-1 text-black dark:text-gray-300">
                   Peder Espen
                 </h3>
