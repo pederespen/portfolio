@@ -1,10 +1,10 @@
 "use client";
 
 import React from "react";
-import { DarkModeToggle } from "./dark-mode-toggle";
-import { LanguageToggle } from "./language-toggle";
+import { DarkModeToggle } from "@/components/ui/dark-mode-toggle";
+import { LanguageToggle } from "@/components/ui/language-toggle";
 import { NavLinks } from "./nav-links";
-import { SocialLinks } from "./social-links";
+import { SocialLinks } from "@/components/ui/social-links";
 
 export const DesktopMenu = () => {
   return (

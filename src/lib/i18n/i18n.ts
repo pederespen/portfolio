@@ -2,8 +2,8 @@
 
 import i18n from "i18next";
 import { initReactI18next } from "react-i18next";
-import enTranslation from "../../public/locales/en/translation.json";
-import noTranslation from "../../public/locales/no/translation.json";
+import enTranslation from "../../../public/locales/en/translation.json";
+import noTranslation from "../../../public/locales/no/translation.json";
 
 if (!i18n.isInitialized) {
   i18n.use(initReactI18next).init({

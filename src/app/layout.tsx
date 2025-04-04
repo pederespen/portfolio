@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import { LanguageProvider } from "./language-provider";
+import { LanguageProvider } from "../lib/i18n/language-provider";
 
 export const metadata: Metadata = {
   title: "Peder Espen | Portfolio",

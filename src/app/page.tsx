@@ -1,9 +1,9 @@
-import { About } from "@/components/about";
-import { Contact } from "@/components/contact";
-import { Footer } from "@/components/footer";
-import { Hero } from "@/components/hero";
-import { Navbar } from "@/components/navbar";
-import { Projects } from "@/components/projects";
+import { About } from "@/components/sections/about";
+import { Contact } from "@/components/sections/contact";
+import { Footer } from "@/components/layout/footer";
+import { Hero } from "@/components/sections/hero";
+import { Navbar } from "@/components/layout/navbar";
+import { Projects } from "@/components/sections/projects";
 
 export default function App() {
   return (
