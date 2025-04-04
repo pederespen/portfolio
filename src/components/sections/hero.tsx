@@ -18,7 +18,7 @@ export const Hero = () => {
             Peder
           </span>
         </h1>
-        <p className="text-2xl text-gray-700 dark:text-gray-300 mb-8">
+        <p className="text-xl sm:text-md md:text-xl lg:text-2xl text-gray-700 dark:text-gray-300 mb-8">
           {t("hero.subtitle")}
         </p>
       </div>
