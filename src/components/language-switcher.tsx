@@ -64,7 +64,7 @@ export const LanguageSwitcher = () => {
   return (
     <button
       onClick={toggleLanguage}
-      className="relative inline-flex h-6 w-11 items-center rounded-full bg-gray-200 dark:bg-neutral-700"
+      className="relative inline-flex h-6 w-11 items-center rounded-full bg-gray-200 dark:bg-neutral-700 cursor-pointer"
       aria-pressed={isNorwegian}
       aria-label={isNorwegian ? "Switch to English" : "Switch to Norwegian"}
     >

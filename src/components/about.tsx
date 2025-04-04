@@ -23,7 +23,7 @@ export const About = () => {
                 height={240}
                 className="rounded-full object-cover border-2 border-blue-500 shadow-lg mr-6 mb-4"
               />
-              <div className="flex flex-col text-center justify-center">
+              <div className="flex flex-col text-left justify-center">
                 <h3 className="text-2xl font-bold mb-1 text-black dark:text-gray-300">
                   Peder Espen
                 </h3>
