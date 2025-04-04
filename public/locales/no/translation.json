@@ -7,6 +7,7 @@
   },
   "hero": {
     "title": "Hei, jeg er Peder",
+    "titlePrefix": "Hei, jeg er ",
     "subtitle": "Jeg liker å utvikle og bruke kode for å løse forretningsutfordringer"
   },
   "about": {

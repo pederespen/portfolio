@@ -21,7 +21,7 @@ export const About = () => {
                 alt="Profile photo"
                 width={240}
                 height={240}
-                className="rounded-full object-cover border-2 border-gray-200 shadow-lg mr-6 mb-4"
+                className="rounded-full object-cover border-2 border-blue-500 shadow-lg mr-6 mb-4"
               />
               <div className="flex flex-col text-center justify-center">
                 <h3 className="text-2xl font-bold mb-1 text-black dark:text-gray-300">
