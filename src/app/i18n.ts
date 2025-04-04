@@ -15,7 +15,7 @@ if (!i18n.isInitialized) {
         translation: noTranslation,
       },
     },
-    lng: "en",
+    lng: "no",
     fallbackLng: "en",
     supportedLngs: ["en", "no"],
     interpolation: {

@@ -48,38 +48,38 @@ const UKFlag = () => (
 
 export const LanguageToggle = () => {
   const { i18n } = useTranslation();
-  const [isNorwegian, setIsNorwegian] = useState(i18n.language === "no");
+  const [isEnglish, setIsEnglish] = useState(i18n.language === "en");
 
   // Update toggle state when language changes externally
   useEffect(() => {
-    setIsNorwegian(i18n.language === "no");
+    setIsEnglish(i18n.language === "en");
   }, [i18n.language]);
 
   const toggleLanguage = () => {
-    const newLang = isNorwegian ? "en" : "no";
+    const newLang = isEnglish ? "no" : "en";
     i18n.changeLanguage(newLang);
-    setIsNorwegian(!isNorwegian);
+    setIsEnglish(!isEnglish);
   };
 
   return (
     <button
       onClick={toggleLanguage}
       className="relative inline-flex h-6 w-11 items-center rounded-full bg-gray-200 dark:bg-neutral-700 cursor-pointer"
-      aria-pressed={isNorwegian}
-      aria-label={isNorwegian ? "Switch to English" : "Switch to Norwegian"}
+      aria-pressed={isEnglish}
+      aria-label={isEnglish ? "Switch to Norwegian" : "Switch to English"}
     >
       <span className="sr-only">
-        {isNorwegian ? "Switch to English" : "Switch to Norwegian"}
+        {isEnglish ? "Switch to Norwegian" : "Switch to English"}
       </span>
 
       {/* Slider */}
       <span
         className={`absolute h-5 w-5 transform rounded-full transition-transform duration-200 ease-in-out overflow-hidden ${
-          isNorwegian ? "translate-x-5" : "translate-x-1"
+          isEnglish ? "translate-x-5" : "translate-x-1"
         }`}
       >
         {/* Display appropriate flag based on current language */}
-        {isNorwegian ? <NorwegianFlag /> : <UKFlag />}
+        {isEnglish ? <UKFlag /> : <NorwegianFlag />}
       </span>
     </button>
   );
