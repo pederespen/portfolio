@@ -46,7 +46,7 @@ const UKFlag = () => (
   </svg>
 );
 
-export const LanguageSwitcher = () => {
+export const LanguageToggle = () => {
   const { i18n } = useTranslation();
   const [isNorwegian, setIsNorwegian] = useState(i18n.language === "no");
 
