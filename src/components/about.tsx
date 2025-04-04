@@ -55,7 +55,7 @@ export const About = () => {
                   ].map((skill) => (
                     <span
                       key={skill}
-                      className="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-100 rounded-full text-sm"
+                      className="px-3 py-1 bg-blue-300 text-white rounded-full text-sm"
                     >
                       {skill}
                     </span>
@@ -76,7 +76,7 @@ export const About = () => {
                   ].map((skill) => (
                     <span
                       key={skill}
-                      className="px-3 py-1 bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-100 rounded-full text-sm"
+                      className="px-3 py-1 bg-blue-400 dark:bg-blue-800 text-white dark:text-blue-200 rounded-full text-sm"
                     >
                       {skill}
                     </span>
@@ -97,7 +97,7 @@ export const About = () => {
                   ].map((skill) => (
                     <span
                       key={skill}
-                      className="px-3 py-1 bg-purple-100 dark:bg-purple-900 text-purple-800 dark:text-purple-100 rounded-full text-sm"
+                      className="px-3 py-1 bg-blue-500 dark:bg-blue-700 text-white dark:text-blue-300 rounded-full text-sm"
                     >
                       {skill}
                     </span>
@@ -112,7 +112,7 @@ export const About = () => {
                     (skill) => (
                       <span
                         key={skill}
-                        className="px-3 py-1 bg-amber-100 dark:bg-amber-900 text-amber-800 dark:text-amber-100 rounded-full text-sm"
+                        className="px-3 py-1 bg-blue-600 text-white rounded-full text-sm"
                       >
                         {skill}
                       </span>
