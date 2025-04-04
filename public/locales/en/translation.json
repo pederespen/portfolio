@@ -24,6 +24,15 @@
     "name": "Name",
     "email": "Email",
     "message": "Message",
-    "send": "Send Message"
+    "send": "Send Message",
+    "sending": "Sending...",
+    "error": "Something went wrong. Please try again.",
+    "success": "Message Sent!",
+    "successMessage": "Thank you for your message. I'll get back to you as soon as possible.",
+    "sendAnother": "Send Another Message",
+    "nameRequired": "Please enter your name",
+    "emailRequired": "Please enter your email",
+    "emailInvalid": "Please enter a valid email address",
+    "messageRequired": "Please enter a message"
   }
 }

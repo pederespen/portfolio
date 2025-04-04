@@ -24,6 +24,15 @@
     "name": "Navn",
     "email": "E-post",
     "message": "Melding",
-    "send": "Send melding"
+    "send": "Send melding",
+    "sending": "Sender...",
+    "error": "Noe gikk galt. Vennligst prøv igjen.",
+    "success": "Melding sendt!",
+    "successMessage": "Takk for din melding. Jeg vil svare så snart som mulig.",
+    "sendAnother": "Send en ny melding",
+    "nameRequired": "Vennligst skriv inn navnet ditt",
+    "emailRequired": "Vennligst skriv inn e-postadressen din",
+    "emailInvalid": "Vennligst skriv inn en gyldig e-postadresse",
+    "messageRequired": "Vennligst skriv inn en melding"
   }
 }
