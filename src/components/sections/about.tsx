@@ -17,7 +17,7 @@ export const About = () => {
             <div className="flex flex-row justify-center">
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
-                src="/headshot.webp"
+                src="./headshot.png"
                 alt="Profile photo"
                 width={240}
                 height={240}
