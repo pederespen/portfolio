@@ -6,12 +6,12 @@ export const Contact = () => {
   const { t } = useTranslation();
 
   return (
-    <section id="contact" className="py-20 flex items-center scroll-mt-16">
-      <div className="container mx-auto w-[85%]">
-        <h2 className="text-3xl font-bold mb-12 text-center mt-10 text-black dark:text-gray-300">
-          {t("contact.title")}
-        </h2>
+    <section id="contact" className="min-h-screen flex flex-col scroll-mt-16">
+      <h2 className="text-3xl font-bold mt-16 mb-16 text-center text-black dark:text-gray-300">
+        {t("contact.title")}
+      </h2>
 
+      <div className="container mx-auto w-[85%] mb-20">
         <div className="max-w-xl mx-auto">
           <form className="space-y-6">
             <div>

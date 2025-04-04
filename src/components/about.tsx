@@ -7,12 +7,12 @@ export const About = () => {
   const { t } = useTranslation();
 
   return (
-    <section id="about" className="min-h-screen flex items-center scroll-mt-4">
-      <div className="container mx-auto w-[85%]">
-        <h2 className="text-3xl font-bold mb-12 text-center mt-10">
-          {t("about.title")}
-        </h2>
+    <section id="about" className="min-h-screen flex flex-col scroll-mt-16">
+      <h2 className="text-3xl font-bold mt-16 mb-16 text-center">
+        {t("about.title")}
+      </h2>
 
+      <div className="container mx-auto w-[85%] mb-20">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
           <div className="flex flex-col">
             <div className="flex flex-row justify-center">
