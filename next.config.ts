@@ -3,7 +3,9 @@ import type { NextConfig } from "next";
 const nextConfig: NextConfig = {
   devIndicators: false,
   output: "export",
-  // Enable importing JSON files
+  images: {
+    unoptimized: true,
+  },
   webpack(config) {
     config.module.rules.push({
       test: /\.json$/,
