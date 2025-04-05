@@ -1,6 +1,7 @@
 "use client";
 
 import { useTranslation } from "react-i18next";
+import Image from "next/image";
 
 export const About = () => {
   const { t } = useTranslation();
@@ -15,8 +16,7 @@ export const About = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
           <div className="flex flex-col">
             <div className="flex flex-row justify-center">
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img
+              <Image
                 src="./headshot.png"
                 alt="Profile photo"
                 width={240}
