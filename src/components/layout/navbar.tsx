@@ -37,7 +37,7 @@ export const Navbar = () => {
 
   return (
     <nav
-      className={`fixed top-0 w-full bg-white/95 dark:bg-black backdrop-blur-sm z-10 py-6 shadow-sm dark:shadow-[0_4px_6px_-1px_rgba(255,255,255,0.05)] transition-all duration-300 ${
+      className={`fixed top-0 w-full bg-white/95 dark:bg-black backdrop-blur-sm z-50 py-6 shadow-sm dark:shadow-[0_4px_6px_-1px_rgba(255,255,255,0.05)] transition-all duration-300 ${
         visible ? "translate-y-0 opacity-100" : "-translate-y-full opacity-0"
       }`}
     >

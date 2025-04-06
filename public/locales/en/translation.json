@@ -17,7 +17,12 @@
   },
   "projects": {
     "title": "My Projects",
-    "message": "I'm currently working on some exciting projects that will be showcased here. Feel free to check back later or contact me for more information about my work."
+    "message": "I'm currently working on some exciting projects that will be showcased here. Feel free to check back later or contact me for more information about my work.",
+    "liveApp": "Live App",
+    "github": "GitHub",
+    "canvascraft": {
+      "description": "Draw using mathematical formulas and HTML Canvas."
+    }
   },
   "contact": {
     "title": "Contact",

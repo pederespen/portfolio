@@ -38,7 +38,7 @@ export const SocialLinks = () => {
         </svg>
       </a>
       <a
-        href="/cv_peder_espen.pdf"
+        href="/assets/cv-peder-espen.pdf"
         download
         className="text-gray-500 dark:text-gray-400 hover:text-blue-500 dark:hover:text-blue-400 transition-colors duration-300 flex items-center gap-1"
         aria-label="Download CV"

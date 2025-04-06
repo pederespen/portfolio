@@ -17,7 +17,7 @@ export const About = () => {
           <div className="flex flex-col">
             <div className="flex flex-row justify-center">
               <Image
-                src="./headshot.png"
+                src="./assets/headshot.png"
                 alt="Profile photo"
                 width={240}
                 height={240}

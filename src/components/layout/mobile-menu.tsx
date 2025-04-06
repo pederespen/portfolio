@@ -14,7 +14,7 @@ interface MobileMenuProps {
 export const MobileMenu = ({ isOpen, onClose }: MobileMenuProps) => {
   return (
     <div
-      className={`md:hidden absolute top-full left-0 w-full bg-white dark:bg-black backdrop-blur-sm shadow-md dark:shadow-[0_4px_6px_-1px_rgba(255,255,255,0.05)] py-4 px-6 z-20 overflow-hidden transition-all duration-300 ease-in-out ${
+      className={`md:hidden absolute top-full left-0 w-full bg-white dark:bg-black backdrop-blur-sm shadow-md dark:shadow-[0_4px_6px_-1px_rgba(255,255,255,0.05)] py-4 px-6 z-50 overflow-hidden transition-all duration-300 ease-in-out ${
         isOpen ? "max-h-96 opacity-100" : "max-h-0 opacity-0 py-0"
       }`}
     >

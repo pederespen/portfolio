@@ -107,14 +107,17 @@ export const Contact = () => {
         <h3 className="text-xl font-medium text-green-800 dark:text-green-300 mb-2">
           {t("contact.success")}
         </h3>
-        <p className="text-green-700 dark:text-green-400">
+        <p className="text-green-700 dark:text-green-400 mb-6">
           {t("contact.successMessage")}
         </p>
         <button
           onClick={() => setSubmitted(false)}
-          className="mt-4 px-4 py-2 bg-green-600 text-white rounded-md hover:bg-green-700 transition-colors"
+          className="relative text-xl font-bold text-gray-800 dark:text-gray-200 w-fit group mx-auto cursor-pointer"
         >
-          {t("contact.sendAnother")}
+          <span className="relative z-10 p-3 uppercase group-hover:text-white transition-colors duration-200">
+            {t("contact.sendAnother")}
+          </span>
+          <span className="absolute bottom-0 left-0 w-full h-0.5 bg-blue-500 group-hover:h-full group-hover:bg-blue-500 dark:group-hover:bg-blue-500 group-hover:bg-opacity-100 dark:group-hover:bg-opacity-100 transition-all duration-200 -z-0"></span>
         </button>
       </div>
     );
@@ -177,13 +180,16 @@ export const Contact = () => {
           )}
         </div>
 
-        <div className="text-left">
+        <div className="text-right">
           <button
             type="submit"
             disabled={loading}
-            className="inline-block px-6 py-3 bg-blue-500 text-white font-bold rounded-md hover:bg-gray-800 dark:hover:bg-gray-600 transition-colors w-auto cursor-pointer disabled:opacity-70 disabled:cursor-not-allowed"
+            className="relative text-xl font-bold text-gray-800 dark:text-gray-200 w-fit group cursor-pointer"
           >
-            {loading ? t("contact.sending") : t("contact.send")}
+            <span className="relative z-10 p-3 uppercase group-hover:text-white transition-colors duration-200">
+              {loading ? t("contact.sending") : t("contact.send")}
+            </span>
+            <span className="absolute bottom-0 left-0 w-full h-0.5 bg-blue-500 group-hover:h-full group-hover:bg-blue-500 dark:group-hover:bg-blue-500 group-hover:bg-opacity-100 dark:group-hover:bg-opacity-100 transition-all duration-200 -z-0"></span>
           </button>
         </div>
       </form>
