@@ -3,10 +3,14 @@
 import { useTranslation } from "react-i18next";
 import Image from "next/image";
 import Link from "next/link";
+import { useTheme } from "@/context/theme-context";
 
 interface Project {
   id: string;
-  logoSrc: string;
+  logoSrc: {
+    light: string;
+    dark: string;
+  };
   screenshotSrc: string;
   liveLink: string;
   githubLink: string;
@@ -14,11 +18,15 @@ interface Project {
 
 export const Projects = () => {
   const { t } = useTranslation();
+  const { isDarkMode } = useTheme();
 
   const projects: Project[] = [
     {
       id: "canvascraft",
-      logoSrc: "/assets/canvascraft-logo-with-text-light.png",
+      logoSrc: {
+        light: "/assets/canvascraft-logo-with-text-light.png",
+        dark: "/assets/canvascraft-logo-with-text-dark.png",
+      },
       screenshotSrc: "/assets/canvascraft-screenshot.png",
       liveLink: "https://pespen.github.io/canvascraft/",
       githubLink: "https://github.com/pespen/canvascraft",
@@ -41,7 +49,11 @@ export const Projects = () => {
                   <div className="md:w-1/3 flex flex-col">
                     <div className="h-16 w-full relative mb-8">
                       <Image
-                        src={project.logoSrc}
+                        src={
+                          isDarkMode
+                            ? project.logoSrc.dark
+                            : project.logoSrc.light
+                        }
                         alt={`${project.id} logo`}
                         fill
                         className="object-contain object-left"

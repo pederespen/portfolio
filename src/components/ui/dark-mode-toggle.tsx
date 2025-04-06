@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useTheme } from "@/context/theme-context";
 
 // SVG Light/Dark Mode Icons
 const LightIcon = () => (
@@ -30,37 +30,11 @@ const DarkIcon = () => (
 );
 
 export const DarkModeToggle = () => {
-  const [isDarkMode, setIsDarkMode] = useState(false);
-
-  // Initialize dark mode based on localStorage or system preference
-  useEffect(() => {
-    // Check if theme exists in localStorage
-    const savedTheme = localStorage.getItem("theme");
-    const prefersDark = window.matchMedia(
-      "(prefers-color-scheme: dark)"
-    ).matches;
-
-    // Set initial state based on saved preference or system preference
-    const shouldSetDark = savedTheme === "dark" || (!savedTheme && prefersDark);
-    setIsDarkMode(shouldSetDark);
-
-    // Apply the initial theme to the HTML element
-    document.documentElement.classList.toggle("dark", shouldSetDark);
-  }, []);
-
-  const toggleMode = () => {
-    setIsDarkMode(!isDarkMode);
-
-    // Toggle the dark class on the HTML element
-    document.documentElement.classList.toggle("dark");
-
-    // Save the preference to localStorage
-    localStorage.setItem("theme", !isDarkMode ? "dark" : "light");
-  };
+  const { isDarkMode, toggleTheme } = useTheme();
 
   return (
     <button
-      onClick={toggleMode}
+      onClick={toggleTheme}
       className="relative inline-flex h-6 w-11 items-center rounded-full bg-gray-200 dark:bg-neutral-700 cursor-pointer"
       aria-pressed={isDarkMode}
       aria-label={isDarkMode ? "Switch to light mode" : "Switch to dark mode"}
