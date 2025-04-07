@@ -28,8 +28,8 @@ export const Projects = () => {
         dark: "/assets/canvascraft-logo-with-text-dark.png",
       },
       screenshotSrc: "/assets/canvascraft-screenshot.png",
-      liveLink: "https://pespen.github.io/canvascraft/",
-      githubLink: "https://github.com/pespen/canvascraft",
+      liveLink: "https://pederespen.github.io/canvascraft/",
+      githubLink: "https://github.com/pederespen/canvascraft",
     },
   ];
 

@@ -6,7 +6,7 @@ export const SocialLinks = () => {
   return (
     <>
       <a
-        href="https://github.com/pespen"
+        href="https://github.com/pederespen"
         target="_blank"
         rel="noopener noreferrer"
         className="text-gray-500 dark:text-gray-400 hover:text-blue-500 dark:hover:text-blue-400 transition-colors"
