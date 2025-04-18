@@ -22,6 +22,9 @@
     "github": "GitHub",
     "canvascraft": {
       "description": "Tegn ved hjelp av matematiske formler og HTML Canvas."
+    },
+    "miniarcade": {
+      "description": "En samling av enkle spill skapt med moderne webteknologier."
     }
   },
   "contact": {

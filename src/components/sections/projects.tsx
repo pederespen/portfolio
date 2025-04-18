@@ -31,6 +31,16 @@ export const Projects = () => {
       liveLink: "https://pederespen.github.io/canvascraft/",
       githubLink: "https://github.com/pederespen/canvascraft",
     },
+    {
+      id: "miniarcade",
+      logoSrc: {
+        light: "/assets/miniarcade-logo-with-text-light.png",
+        dark: "/assets/miniarcade-logo-with-text-dark.png",
+      },
+      screenshotSrc: "/assets/miniarcade-screenshot.png",
+      liveLink: "https://pederespen.github.io/miniarcade/",
+      githubLink: "https://github.com/pederespen/miniarcade",
+    },
   ];
 
   return (
@@ -42,10 +52,14 @@ export const Projects = () => {
       <div className="container mx-auto w-[95%] mb-20">
         {projects.length > 0 ? (
           <div className="space-y-32">
-            {projects.map((project) => (
+            {projects.map((project, index) => (
               <div key={project.id} className="project-container">
-                <div className="flex flex-col md:flex-row gap-12">
-                  {/* Left side - Logo, description, and links */}
+                <div
+                  className={`flex flex-col ${
+                    index % 2 === 0 ? "md:flex-row" : "md:flex-row-reverse"
+                  } gap-12`}
+                >
+                  {/* Logo, description, and links */}
                   <div className="md:w-1/3 flex flex-col">
                     <div className="h-16 w-full relative mb-8">
                       <Image
@@ -90,7 +104,7 @@ export const Projects = () => {
                     </div>
                   </div>
 
-                  {/* Right side - Screenshot */}
+                  {/* Screenshot */}
                   <div className="md:w-2/3 flex items-center justify-center">
                     <div className="relative w-auto h-auto max-w-full">
                       <Image

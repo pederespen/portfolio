@@ -22,6 +22,9 @@
     "github": "GitHub",
     "canvascraft": {
       "description": "Draw using mathematical formulas and HTML Canvas."
+    },
+    "miniarcade": {
+      "description": "A collection of simple games created using modern web technologies."
     }
   },
   "contact": {
