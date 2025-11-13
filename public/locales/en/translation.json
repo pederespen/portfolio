@@ -20,6 +20,9 @@
     "message": "I'm currently working on some exciting projects that will be showcased here. Feel free to check back later or contact me for more information about my work.",
     "liveApp": "Live App",
     "github": "GitHub",
+    "budgetbuddy": {
+      "description": "Privacy-first budgeting app that runs entirely in the browser."
+    },
     "canvascraft": {
       "description": "Draw using mathematical formulas and HTML Canvas."
     },

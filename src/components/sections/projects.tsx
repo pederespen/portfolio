@@ -22,6 +22,16 @@ export const Projects = () => {
 
   const projects: Project[] = [
     {
+      id: "budgetbuddy",
+      logoSrc: {
+        light: "/assets/budgetbuddy-logo.png",
+        dark: "/assets/budgetbuddy-logo-dark.png",
+      },
+      screenshotSrc: "/assets/budgetbuddy-screenshot.png",
+      liveLink: "https://pederespen.github.io/budgetbuddy/",
+      githubLink: "https://github.com/pederespen/budgetbuddy",
+    },
+    {
       id: "canvascraft",
       logoSrc: {
         light: "/assets/canvascraft-logo-with-text-light.png",

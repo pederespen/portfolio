@@ -20,6 +20,9 @@
     "message": "Jeg jobber for tiden med spennende prosjekter som vil bli vist her. Kom gjerne tilbake senere eller kontakt meg for mer informasjon om arbeidet mitt.",
     "liveApp": "Live App",
     "github": "GitHub",
+    "budgetbuddy": {
+      "description": "Personvern-fokusert budsjettapp som kjører helt i nettleseren."
+    },
     "canvascraft": {
       "description": "Tegn ved hjelp av matematiske formler og HTML Canvas."
     },
