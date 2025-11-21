@@ -32,16 +32,6 @@ export const Projects = () => {
       githubLink: "https://github.com/pederespen/budgetbuddy",
     },
     {
-      id: "canvascraft",
-      logoSrc: {
-        light: "/assets/canvascraft-logo-with-text-light.png",
-        dark: "/assets/canvascraft-logo-with-text-dark.png",
-      },
-      screenshotSrc: "/assets/canvascraft-screenshot.png",
-      liveLink: "https://pederespen.github.io/canvascraft/",
-      githubLink: "https://github.com/pederespen/canvascraft",
-    },
-    {
       id: "miniarcade",
       logoSrc: {
         light: "/assets/miniarcade-logo-with-text-light.png",

@@ -21,10 +21,7 @@
     "liveApp": "Live App",
     "github": "GitHub",
     "budgetbuddy": {
-      "description": "Personvern-fokusert budsjettapp som kjører helt i nettleseren."
-    },
-    "canvascraft": {
-      "description": "Tegn ved hjelp av matematiske formler og HTML Canvas."
+      "description": "Personvern-fokusert budsjettapp i nettleseren."
     },
     "miniarcade": {
       "description": "En samling av enkle spill skapt med moderne webteknologier."

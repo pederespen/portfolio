@@ -23,9 +23,6 @@
     "budgetbuddy": {
       "description": "Privacy-first budgeting app that runs entirely in the browser."
     },
-    "canvascraft": {
-      "description": "Draw using mathematical formulas and HTML Canvas."
-    },
     "miniarcade": {
       "description": "A collection of simple games created using modern web technologies."
     }
