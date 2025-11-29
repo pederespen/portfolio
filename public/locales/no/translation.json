@@ -23,6 +23,9 @@
     "budgetbuddy": {
       "description": "Personvern-fokusert budsjettapp i nettleseren."
     },
+    "imagelab": {
+      "description": "Nettleserbasert verktøy for bilderedigering og manipulering."
+    },
     "miniarcade": {
       "description": "En samling av enkle spill skapt med moderne webteknologier."
     }

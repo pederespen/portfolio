@@ -16,6 +16,8 @@ interface Project {
   screenshots: string[];
   liveLink: string;
   githubLink: string;
+  showLogoText?: boolean;
+  logoText?: string;
 }
 
 // Image stack component with auto-rotate and click-to-cycle functionality
@@ -156,6 +158,23 @@ export const Projects = () => {
       githubLink: "https://github.com/pederespen/budgetbuddy",
     },
     {
+      id: "imagelab",
+      logoSrc: {
+        light: "/assets/imagelab/imagelab-logo-light.png",
+        dark: "/assets/imagelab/imagelab-logo-dark.png",
+      },
+      screenshotSrc: "/assets/imagelab/imagelab-preview-1.png",
+      screenshots: [
+        "/assets/imagelab/imagelab-preview-1.png",
+        "/assets/imagelab/imagelab-preview-2.png",
+        "/assets/imagelab/imagelab-preview-3.png",
+      ],
+      liveLink: "https://pederespen.github.io/imagelab/",
+      githubLink: "https://github.com/pederespen/imagelab",
+      showLogoText: true,
+      logoText: "ImageLab",
+    },
+    {
       id: "miniarcade",
       logoSrc: {
         light: "/assets/miniarcade/miniarcade-logo-with-text-light.png",
@@ -190,17 +209,24 @@ export const Projects = () => {
                 >
                   {/* Logo, description, and links */}
                   <div className="md:w-1/3 flex flex-col">
-                    <div className="h-16 w-full relative mb-8">
-                      <Image
-                        src={
-                          isDarkMode
-                            ? project.logoSrc.dark
-                            : project.logoSrc.light
-                        }
-                        alt={`${project.id} logo`}
-                        fill
-                        className="object-contain object-left"
-                      />
+                    <div className="h-16 w-full flex items-center gap-3 mb-8">
+                      <div className="h-full w-auto relative" style={{ aspectRatio: project.showLogoText ? '1' : 'auto', minWidth: project.showLogoText ? '64px' : '100%' }}>
+                        <Image
+                          src={
+                            isDarkMode
+                              ? project.logoSrc.dark
+                              : project.logoSrc.light
+                          }
+                          alt={`${project.id} logo`}
+                          fill
+                          className="object-contain object-left"
+                        />
+                      </div>
+                      {project.showLogoText && project.logoText && (
+                        <span className="text-3xl font-bold text-gray-800 dark:text-gray-200">
+                          {project.logoText}
+                        </span>
+                      )}
                     </div>
 
                     <p className="text-lg text-gray-700 dark:text-gray-300 mb-6">

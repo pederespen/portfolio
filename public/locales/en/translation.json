@@ -23,6 +23,9 @@
     "budgetbuddy": {
       "description": "Privacy-first budgeting app that runs entirely in the browser."
     },
+    "imagelab": {
+      "description": "Browser-based image editing and manipulation tool."
+    },
     "miniarcade": {
       "description": "A collection of simple games created using modern web technologies."
     }
