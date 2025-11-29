@@ -4,6 +4,7 @@ import { useTranslation } from "react-i18next";
 import Image from "next/image";
 import Link from "next/link";
 import { useTheme } from "@/context/theme-context";
+import { useState, useEffect } from "react";
 
 interface Project {
   id: string;
@@ -12,9 +13,127 @@ interface Project {
     dark: string;
   };
   screenshotSrc: string;
+  screenshots: string[];
   liveLink: string;
   githubLink: string;
 }
+
+// Image stack component with auto-rotate and click-to-cycle functionality
+const ImageStack = ({
+  screenshots,
+  projectId,
+}: {
+  screenshots: string[];
+  projectId: string;
+}) => {
+  const [activeIndex, setActiveIndex] = useState(0);
+  const [isPaused, setIsPaused] = useState(false);
+
+  // Auto-rotate every 4 seconds
+  useEffect(() => {
+    if (isPaused) return;
+
+    const interval = setInterval(() => {
+      setActiveIndex((prev) => (prev + 1) % screenshots.length);
+    }, 4000);
+
+    return () => clearInterval(interval);
+  }, [isPaused, screenshots.length]);
+
+  const handleClick = () => {
+    setActiveIndex((prev) => (prev + 1) % screenshots.length);
+    // Pause auto-rotate briefly after manual interaction
+    setIsPaused(true);
+    setTimeout(() => setIsPaused(false), 6000);
+  };
+
+  // Calculate positions for each card in the stack
+  const getCardStyle = (index: number) => {
+    const position =
+      (index - activeIndex + screenshots.length) % screenshots.length;
+
+    if (position === 0) {
+      // Front card
+      return {
+        zIndex: 30,
+        transform: "translateX(0) translateY(0)",
+        opacity: 1,
+      };
+    } else if (position === 1) {
+      // Middle card
+      return {
+        zIndex: 20,
+        transform: "translateX(-12px) translateY(12px)",
+        opacity: 0.6,
+      };
+    } else {
+      // Back card
+      return {
+        zIndex: 10,
+        transform: "translateX(-24px) translateY(24px)",
+        opacity: 0.35,
+      };
+    }
+  };
+
+  return (
+    <div className="md:w-2/3 flex items-start justify-center">
+      <div className="relative w-full max-w-2xl pl-8 pb-8">
+        <div
+          className="relative cursor-pointer"
+          onClick={handleClick}
+          role="button"
+          aria-label="Click to cycle through screenshots"
+        >
+          {screenshots.map((src, index) => {
+            const style = getCardStyle(index);
+            return (
+              <div
+                key={index}
+                className={`${
+                  index === 0 ? "relative" : "absolute top-0 left-0 w-full"
+                } rounded-xl overflow-hidden shadow-xl transition-all duration-500 ease-out`}
+                style={{
+                  zIndex: style.zIndex,
+                  transform: style.transform,
+                  opacity: style.opacity,
+                }}
+              >
+                <Image
+                  src={src}
+                  alt={`${projectId} screenshot ${index + 1}`}
+                  width={800}
+                  height={500}
+                  className="object-contain w-full h-auto"
+                  style={{ maxHeight: "600px" }}
+                />
+              </div>
+            );
+          })}
+        </div>
+
+        {/* Indicator dots */}
+        <div className="flex justify-center gap-2 mt-8">
+          {screenshots.map((_, index) => (
+            <button
+              key={index}
+              onClick={(e) => {
+                e.stopPropagation();
+                setActiveIndex(index);
+              }}
+              className={`w-2 h-2 rounded-full transition-all duration-300 ${
+                index === activeIndex
+                  ? "bg-blue-500 w-4"
+                  : "bg-gray-300 dark:bg-gray-600 hover:bg-gray-400 dark:hover:bg-gray-500"
+              }`}
+              aria-label={`View screenshot ${index + 1}`}
+            />
+          ))}
+        </div>
+      </div>
+    </div>
+  );
+};
 
 export const Projects = () => {
   const { t } = useTranslation();
@@ -27,7 +146,12 @@ export const Projects = () => {
         light: "/assets/budgetbuddy-logo.png",
         dark: "/assets/budgetbuddy-logo-dark.png",
       },
-      screenshotSrc: "/assets/budgetbuddy-screenshot.png",
+      screenshotSrc: "/assets/budgetbuddy-preview-1.png",
+      screenshots: [
+        "/assets/budgetbuddy-preview-1.png",
+        "/assets/budgetbuddy-preview-2.png",
+        "/assets/budgetbuddy-preview-3.png",
+      ],
       liveLink: "https://pederespen.github.io/budgetbuddy/",
       githubLink: "https://github.com/pederespen/budgetbuddy",
     },
@@ -38,6 +162,11 @@ export const Projects = () => {
         dark: "/assets/miniarcade-logo-with-text-dark.png",
       },
       screenshotSrc: "/assets/miniarcade-screenshot.png",
+      screenshots: [
+        "/assets/miniarcade-screenshot.png",
+        "/assets/miniarcade-screenshot.png",
+        "/assets/miniarcade-screenshot.png",
+      ],
       liveLink: "https://pederespen.github.io/miniarcade/",
       githubLink: "https://github.com/pederespen/miniarcade",
     },
@@ -104,19 +233,11 @@ export const Projects = () => {
                     </div>
                   </div>
 
-                  {/* Screenshot */}
-                  <div className="md:w-2/3 flex items-center justify-center">
-                    <div className="relative w-auto h-auto max-w-full">
-                      <Image
-                        src={project.screenshotSrc}
-                        alt={`${project.id} screenshot`}
-                        width={800}
-                        height={500}
-                        className="object-contain"
-                        style={{ maxHeight: "600px" }}
-                      />
-                    </div>
-                  </div>
+                  {/* Screenshot stack with click-to-cycle */}
+                  <ImageStack
+                    screenshots={project.screenshots}
+                    projectId={project.id}
+                  />
                 </div>
               </div>
             ))}
