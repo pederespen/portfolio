@@ -199,18 +199,24 @@ export const Projects = () => {
 
       <div className="container mx-auto w-[95%] mb-20">
         {projects.length > 0 ? (
-          <div className="space-y-32">
+          <div className="space-y-48">
             {projects.map((project, index) => (
               <div key={project.id} className="project-container">
                 <div
-                  className={`flex flex-col ${
+                  className={`flex flex-col w-full ${
                     index % 2 === 0 ? "md:flex-row" : "md:flex-row-reverse"
                   } gap-12`}
                 >
                   {/* Logo, description, and links */}
                   <div className="md:w-1/3 flex flex-col">
                     <div className="h-16 w-full flex items-center gap-3 mb-8">
-                      <div className="h-full w-auto relative" style={{ aspectRatio: project.showLogoText ? '1' : 'auto', minWidth: project.showLogoText ? '64px' : '100%' }}>
+                      <div
+                        className="h-full w-auto relative"
+                        style={{
+                          aspectRatio: project.showLogoText ? "1" : "auto",
+                          minWidth: project.showLogoText ? "64px" : "100%",
+                        }}
+                      >
                         <Image
                           src={
                             isDarkMode
