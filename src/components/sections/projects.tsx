@@ -143,14 +143,14 @@ export const Projects = () => {
     {
       id: "budgetbuddy",
       logoSrc: {
-        light: "/assets/budgetbuddy-logo.png",
-        dark: "/assets/budgetbuddy-logo-dark.png",
+        light: "/assets/budgetbuddy/budgetbuddy-logo.png",
+        dark: "/assets/budgetbuddy/budgetbuddy-logo-dark.png",
       },
-      screenshotSrc: "/assets/budgetbuddy-preview-1.png",
+      screenshotSrc: "/assets/budgetbuddy/budgetbuddy-preview-1.png",
       screenshots: [
-        "/assets/budgetbuddy-preview-1.png",
-        "/assets/budgetbuddy-preview-2.png",
-        "/assets/budgetbuddy-preview-3.png",
+        "/assets/budgetbuddy/budgetbuddy-preview-1.png",
+        "/assets/budgetbuddy/budgetbuddy-preview-2.png",
+        "/assets/budgetbuddy/budgetbuddy-preview-3.png",
       ],
       liveLink: "https://pederespen.github.io/budgetbuddy/",
       githubLink: "https://github.com/pederespen/budgetbuddy",
@@ -158,14 +158,14 @@ export const Projects = () => {
     {
       id: "miniarcade",
       logoSrc: {
-        light: "/assets/miniarcade-logo-with-text-light.png",
-        dark: "/assets/miniarcade-logo-with-text-dark.png",
+        light: "/assets/miniarcade/miniarcade-logo-with-text-light.png",
+        dark: "/assets/miniarcade/miniarcade-logo-with-text-dark.png",
       },
-      screenshotSrc: "/assets/miniarcade-screenshot.png",
+      screenshotSrc: "/assets/miniarcade/miniarcade-screenshot.png",
       screenshots: [
-        "/assets/miniarcade-screenshot.png",
-        "/assets/miniarcade-screenshot.png",
-        "/assets/miniarcade-screenshot.png",
+        "/assets/miniarcade/miniarcade-screenshot.png",
+        "/assets/miniarcade/miniarcade-screenshot.png",
+        "/assets/miniarcade/miniarcade-screenshot.png",
       ],
       liveLink: "https://pederespen.github.io/miniarcade/",
       githubLink: "https://github.com/pederespen/miniarcade",
