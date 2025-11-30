@@ -174,21 +174,6 @@ export const Projects = () => {
       showLogoText: true,
       logoText: "ImageLab",
     },
-    {
-      id: "miniarcade",
-      logoSrc: {
-        light: "/assets/miniarcade/miniarcade-logo-with-text-light.png",
-        dark: "/assets/miniarcade/miniarcade-logo-with-text-dark.png",
-      },
-      screenshotSrc: "/assets/miniarcade/miniarcade-screenshot.png",
-      screenshots: [
-        "/assets/miniarcade/miniarcade-screenshot.png",
-        "/assets/miniarcade/miniarcade-screenshot.png",
-        "/assets/miniarcade/miniarcade-screenshot.png",
-      ],
-      liveLink: "https://pederespen.github.io/miniarcade/",
-      githubLink: "https://github.com/pederespen/miniarcade",
-    },
   ];
 
   return (
